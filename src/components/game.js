@@ -59,7 +59,7 @@ export default class Game extends React.Component {
 
 				}}>
 					<input ref={node => this.number = node} type="number" name="user-guess" id="js-user-guess" className="text" max="100" min="1" autocomplete="off" placeholder="Enter a number between 0 and 100" required/>
-	      			<input type="submit" id="js-guess-submit" className="button" styles={ (gameOver === true)? "opacity: 0" : ""} />
+	      			<input type="submit" id="js-guess-submit" className="button" style={ (gameOver === true)? {opacity: 0} : {}} />
 				</form>
 
 	      		<p>Guess #<span className="count js-guess-count">{attempts.length}</span>!</p>
